@@ -9,6 +9,7 @@ import { SuccessMessage } from './components/success'
 import { FailMessage } from './components/fail'
 import { TransferSuccess } from './components/Transaction'
 import { TransferFailed } from './components/failTransaction'
+import { Landing } from './components/Home'
 import './App.css'
 
 
@@ -26,6 +27,7 @@ function App() {
       <Route path='/fail' element={<FailMessage/>}></Route>
       <Route path='/transfer' element={<TransferSuccess/>}></Route>
       <Route path='/failtransfer' element={<TransferFailed/>}></Route>
+      <Route path='/' element={<Landing/>}></Route>
     </Routes>
     </BrowserRouter>
   )
